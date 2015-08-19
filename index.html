@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyIsCatch</title>
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+	    <link id="favicon" rel="shortcut icon" href="./files/imgs/favicon.ico" type="ico" />
+
+		<link rel="stylesheet" href="./files/css/jquery-ui.min.css">
+	  	<script src="./files/js/jquery-1.10.2.min.js"></script>
+	  	<script src="./files/js/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" href="./files/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./files/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="./files/css/dashboard.css">
+		<script src="./files/js/bootstrap.min.js"></script>
+
+	  	<script type="text/javascript" src="./files/js/interface.js"></script>
+
+	  	<script src="./files/js/underscore-min.js"></script>
+		<script src="./files/js/jquery.easing.min.js"></script>
+		
+		<script src="./files/js/gridstack.min.js"></script>
+		<link href="./files/css/gridstack.min.css" rel="stylesheet">
+
+		<link href="./files/css/style.css" rel="stylesheet">
+		<link rel="stylesheet/less" type="text/css" href="./files/css/gridstack-item.less" />
+
+		<script src="./files/js/less.min.js" type="text/javascript"></script>
+
+		<script type="text/javascript" src="./files/js/tablet.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2 col-sm-2 sidebar" id="sidebar-left">
+					<div>
+						<label>Screen:</label>
+        				<select class="form-control" name="sel-mockup" id="sel-mockup">
+        					<option value="smartphone-1">320X480</option>
+    						<option value="smartphone-2" selected="">360X640</option>
+    						<option value="tablet">768X1024</option>
+    						<option value="desktop">1024X768</option>
+        				</select>
+        			</div>
+        			<hr>
+          			<h4>UI Elements</h4>
+
+          			<div>
+						<div id="tools">
+							<div class="element-icon" id="icon-input" data-element="input">
+								Input<br>
+								<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+							</div>
+							<div class="element-icon" id="icon-label" data-element="label">
+								Label<br>
+								<span class="glyphicon glyphicon-font" aria-hidden="true"></span>
+							</div>
+
+							<div class="element-icon" id="icon-button" data-element="button">
+								Button<br>
+								<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>
+							</div>
+
+							<div class="element-icon" id="icon-select" data-element="select">
+								Select<br>
+								<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+							</div>
+
+							<div class="element-icon" id="icon-radio" data-element="radio">
+								Radio<br>
+								<span class="glyphicon glyphicon-record" aria-hidden="true"></span>
+							</div>
+
+							<div class="element-icon" id="icon-keyboard" data-element="keyboard">
+								Keyboard<br>
+								<span class="glyphicon glyphicon-text-background" aria-hidden="true"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8 col-md-offset-2 main">
+					<div id="tablet">
+						<div id="mockup" class="smartphone-2">
+							<div id="elementsArea" class="grid-stack">								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2 sidebar" id="sidebar-right">
+      				<h4 id="title-opt-element">Select an element</h4>
+
+      				<div class="row" id="tools-options" style="display: none">
+	      				<div class="col-md-10 col-md-offset-1">
+	      					<button id="btn-delete" class="btn btn-danger btn-xs btn-block">
+	      						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete
+	      					</button>
+	      					<button id="btn-lock" class="btn btn-default btn-xs btn-block">
+	      						<span class="glyphicon glyphicon-lock" aria-hidden="true"></span> 
+	      						<span id="text-lock">Lock</span>
+	      					</button>
+	      				</div>
+
+	      				<div id="element-txt-edit" class="col-md-10 col-md-offset-1" style="display: none">
+      						<hr />
+      						<label for="element-txt" class="control-label">Text:</label>
+      						<input id="element-txt" data-lbl-id="" type="text" class="form-control input-sm">
+      						<br />
+  							<label for="element-txt-size" class="control-label">Font size:</label>
+							<input id="element-txt-size" data-lbl-id="" type="number" class="form-control input-sm" value="1.00"  step="0.10" min="0">
+      					</div>
+
+      				</div>
+      			</div>
+
+			</div>
+		</div>
+
+    	<div class="container-fluid" style="display:none">
+      		<div class="row">
+        		<div class="col-md-2 sidebar" id="sidebar-left" style="display:none">
+        			<div>
+        				<select class="form-control" name="sel-mockup" id="sel-mockup">
+        					<option>Tablet</option>
+        					<optgroup>
+        						<option>Smartphone 4"</option>
+        						<option>Smartphone 5"</option>
+    						</optgroup>
+        					
+        				</select>
+        			</div>
+        			<hr>
+          			<h4>UI Elements</h4>
+
+          			<div>
+						<div id="tools">
+							<div class="element-icon" id="icon-input" data-element="input">
+								Input<br>
+								<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+							</div>
+							<div class="element-icon" id="icon-label" data-element="label">
+								Label<br>
+								<span class="glyphicon glyphicon-font" aria-hidden="true"></span>
+							</div>
+
+							<div class="element-icon" id="icon-button" data-element="button">
+								Button<br>
+								<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>
+							</div>
+
+							<div class="element-icon" id="icon-select" data-element="select">
+								Select<br>
+								<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+							</div>
+
+							<div class="element-icon" id="icon-radio" data-element="radio">
+								Radio<br>
+								<span class="glyphicon glyphicon-record" aria-hidden="true"></span>
+							</div>
+
+							<div class="element-icon" id="icon-keyboard" data-element="keyboard">
+								Keyboard<br>
+								<span class="glyphicon glyphicon-text-background" aria-hidden="true"></span>
+							</div>
+						</div>
+					</div>
+        		</div>
+        		<div class="col-md-8 main" style="display:none">
+          			<div id="tablet">
+						<div id="mockup" class="smartphone-2">
+							<div id="elementsArea" class="grid-stack" data-gs-width="14">									
+							</div>
+						</div>
+					</div>
+      			</div>
+      			<div class="col-md-2 sidebar" id="sidebar-right" style="display: nonea;">
+      				<h4 id="title-opt-element">Title Element</h4>
+
+      				<div class="row">
+	      				<div class="col-md-10 col-md-offset-1">
+	      					<button id="btn-delete" class="btn btn-danger btn-xs btn-block">Delete</button>
+	      					<button id="btn-delete" class="btn btn-default btn-xs btn-block">Lock</button>	
+	      				</div>
+      				</div>
+      				<hr>
+
+      				<div class="row">
+      					<div class="col-md-6">
+      						<button id="btn-delete" class="btn btn-danger btn-xs btn-block">Delete</button>	
+      					</div>
+      					<div class="col-md-6">
+      						<button id="btn-delete" class="btn btn-default btn-xs btn-block">Lock</button>	
+      					</div>   
+      				</div>
+      			</div>
+  			</div>
+        </div>
+	</body>
+</html>
