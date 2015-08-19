@@ -1,0 +1,116 @@
+body {
+	font-family: "HelveticaNeue-UltraLight", "Segoe UI", "Roboto Light", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+.sidebar {
+    background-color: #f9f9f9;
+    top: 0;
+}
+#sidebar-left {
+	border-right: 1px solid #cccccc;
+
+}
+#sidebar-right {
+	border-left: 1px solid #cccccc;
+	left: auto;
+	right: 0;
+}
+.sidebar h4 {
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#title-element-id{
+	color: #999999;
+    font-size: 0.9em;
+    font-style: italic;
+}
+#tablet {
+	height: 100%;
+	width: 100%;
+}
+#mockup {
+	/*background-image: url('../imgs/mockup-s4.png');
+	background-repeat: no-repeat;*/
+}
+#elementsArea {
+	background-color: #f9f9f9;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    height: 640px;
+    margin: 0 auto;
+    width: 360px;
+}
+.element {
+	max-width: 272px;
+	position: absolute !important;
+}
+.element{border:1px solid #00FF00;background-color: #3498db;}
+#tools .element{
+	width: 50%;
+}
+.ui-resizable-handle {
+    opacity: 0;
+}
+.form-control {
+	height: 100% !important;
+}
+.grid-stack > .grid-stack-item:hover > .grid-stack-item-content {
+    border: 1px dashed #DDD;
+}
+.grid-stack > .grid-stack-item > .editLabel a {
+	opacity: 0;
+}
+.grid-stack > .grid-stack-item:hover > .editLabel a {
+	opacity: 1;
+}
+.grid-stack-item-content #keyboard-img {
+	width: 100%;
+	height: 100%;
+}
+.element-icon {
+	background-color: #e9e9e9;
+	border: 1px solid #CCC;
+	cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    margin: 0 2px 5px;
+    text-align: center;
+    width: 84px;
+}
+
+.element-icon:hover {
+    background-color: #d9d9d9;
+}
+
+.element-selected {
+	border: 1px solid #00A8FF !important;
+}
+
+.grid-stack-item.ui-draggable.ui-resizable.ui-resizable-autohide.ui-draggable-disabled.ui-resizable-disabled > .grid-stack-item-content {
+	background-color: #F3F3F3;
+	color: #999;
+	opacity: 0.5;
+}
+
+.smartphone-1 #elementsArea{
+	width: 320px !important;
+	height: 480px !important;
+}
+
+.smartphone-2 #elementsArea{
+	width: 360px !important;
+	height: 640px !important;
+}
+
+.tablet #elementsArea{
+	width: 768px !important;
+	height: 1024px !important;
+}
+
+.desktop #elementsArea{
+	width: 1024px !important;
+	height: 768px !important;
+}

@@ -1,0 +1,27 @@
+
+	.item(@start, @end) when (@start <= @end) {
+		.item((@start + 1),  @end);
+	  	.grid-stack-item[data-gs-width="@{start}"]  { width: 100% / (@end / @start) }
+	  	.grid-stack-item[data-gs-x="@{start}"] { left: (100% / @end) * @start }
+	  	.grid-stack-item[data-gs-min-width='@{start}'] { min-width: (100% / @end) * @start; }
+        .grid-stack-item[data-gs-max-width='@{start}'] { max-width: (100% / @end) * @start; }
+	}
+
+
+/**/
+	.smartphone-1 #elementsArea{
+		.item(1, 12);
+	}
+
+	.smartphone-2 #elementsArea{
+		.item(1, 14);
+	}
+
+	.tablet #elementsArea{
+		.item(1, 28);
+	}
+
+	.desktop #elementsArea{
+		.item(1, 38);
+	}
+/**/
